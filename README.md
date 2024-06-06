@@ -1,0 +1,9 @@
+The movie recommendation chatbot utilizes the Language Model (LLM) of the Jamba model by AI21 Studio, which is a powerful tool for generating human-like text. To enhance its specificity and narrow down its scope, a Neo4j graph database was integrated. Neo4j is a highly scalable, native graph database that allows for efficient storage and retrieval of interconnected data.
+
+In this setup, the Neo4j database serves as the backbone for organizing movie-related information. It stores data in nodes and relationships, representing entities such as movies, genres, actors, directors, and user preferences. By structuring data in this graph format, relationships between different entities can be easily captured and leveraged for recommendation purposes.
+
+To further refine recommendations, vector points are created for each node in the Neo4j graph. These vector points represent key features or attributes of the corresponding entity, such as genre, directorial style, actor preferences, user ratings, etc. By quantifying these attributes into vector space, it becomes possible to measure the similarity between any two nodes in the graph.
+
+The concepts of Generative AI (GenAI) and RAG (Retrieval-Augmented Generation) are integrated into the recommendation process. GenAI refers to the use of AI models to generate new content, such as movie summaries, reviews, or personalized recommendations. RAG, on the other hand, combines retrieval-based methods with generative models to improve the relevance and diversity of generated responses.
+
+In practice, the movie recommendation chatbot leverages the Neo4j graph database to retrieve relevant movie information based on user queries or preferences. It then utilizes the LLM of the Jamba model to generate personalized recommendations or responses. The integration of vector points allows for efficient similarity calculations between movies, enabling the chatbot to suggest relevant options based on user input.
